@@ -1,0 +1,54 @@
+{
+  "name": "ntt-view",
+  "version": "0.0.1",
+  "description": "View model typings and schemas.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "major": "npm version major",
+    "minor": "npm version minor",
+    "patch": "npm version patch",
+    "publish-public": "npm publish --access public",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntt-city/ntt-view.git"
+  },
+  "keywords": [
+    "Entity",
+    "Model",
+    "Screen",
+    "View"
+  ],
+  "author": "Lucas Martínez Oromí",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntt-city/ntt-view/issues"
+  },
+  "homepage": "https://github.com/ntt-city/ntt-view#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  }
+}
