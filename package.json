@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "description": "View model typings and schemas.",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": ["dist/index.d.ts", "dist/index.d.ts"],
   "files": [
-    "dist"
+    "dist",
+    "typings"
   ],
   "scripts": {
     "build": "tsc",
+    "link-typings": "npm link ../typings",
     "major": "npm version major",
     "minor": "npm version minor",
     "patch": "npm version patch",
