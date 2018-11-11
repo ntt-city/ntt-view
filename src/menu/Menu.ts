@@ -1,10 +1,10 @@
 import { Container } from '../container';
-import MenuItem from './MenuItem';
+import Item from './Item';
 
 export default interface Menu extends Omit<Container, 'props' | 'type'> {
 
     props: Omit<Container, 'items'> & {
-        items: Array<string | MenuItem>;
+        items: Array<string | Item>;
     }
 
     type: typeof MenuTypeName;

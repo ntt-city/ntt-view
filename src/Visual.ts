@@ -1,6 +1,3 @@
-export default interface Visual {
+import Element from './Element';
 
-    props: SimpleObject;
-
-    type: string;
-}
+export default interface Visual extends Element { }

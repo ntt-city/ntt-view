@@ -1,0 +1,9 @@
+export { default as Ajax } from './Ajax';
+export { default as Direct } from './Direct';
+export { default as JsonP } from './JsonP';
+export { default as LocalStorage } from './LocalStorage';
+export { default as Memory } from './Memory';
+export { default as OData } from './OData';
+export { default as Proxy } from './Proxy';
+export { default as Rest } from './Rest';
+export { default as SessionStorage } from './SessionStorage';
