@@ -1,11 +1,12 @@
 import Layout from './Auto';
 
-export interface Column {
+export default interface Column extends Omit<Layout, 'props' | 'type'> {
 
+    props: Layout['props'] & {
+    };
+
+    type: typeof ColumnTypeName;
 }
 
 export const ColumnTypeName = 'Column';
 
-export default interface ColumnLayout extends Column, Omit<Layout, 'type'> {
-    type: typeof ColumnTypeName;
-}

@@ -13,6 +13,6 @@ export { default as FormLayout } from './container/Form';
 export { default as HBoxLayout } from './container/HBox';
 export { default as TableLayout } from './container/Table';
 export { default as VBoxLayout } from './container/VBox';
-
-export { default as ContainerType } from './container';
 export { default as Layout } from './Layout';
+export { default as LayoutType } from './LayoutType';
+export { default as LayoutTypes } from './LayoutTypes';

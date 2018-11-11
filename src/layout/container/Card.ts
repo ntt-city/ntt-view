@@ -1,11 +1,11 @@
 import Layout from './Fit';
 
-export interface Card {
+export default interface CardLayout extends Omit<Layout, 'props' | 'type'> {
 
+    props: Layout['props'] & {
+    };
+
+    type: typeof CardTypeName;
 }
 
 export const CardTypeName = 'Card';
-
-export default interface CardLayout extends Card, Omit<Layout, 'type'> {
-    type: typeof CardTypeName;
-}

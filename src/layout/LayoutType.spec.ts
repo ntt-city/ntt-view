@@ -1,4 +1,4 @@
-import ContainerType, {
+import {
     AbsoluteTypeName,
     AccordionTypeName,
     AnchorTypeName,
@@ -15,8 +15,9 @@ import ContainerType, {
     TableTypeName,
     VBoxTypeName
 } from './container';
+import LayoutType from './LayoutType';
 
-function testType(layout: ContainerType[keyof ContainerType]) {
+function testType(layout: LayoutType[keyof LayoutType]) {
     switch (layout.type) {
         case AbsoluteTypeName:
             return 'Absolute';
@@ -37,7 +38,7 @@ function testType(layout: ContainerType[keyof ContainerType]) {
         case ColumnTypeName:
             return 'Column';
         case ContainerTypeName:
-            return 'Container';
+            return 'LayoutTypes';
         case FitTypeName:
             return 'Fit';
         case FormTypeName:
@@ -53,17 +54,17 @@ function testType(layout: ContainerType[keyof ContainerType]) {
 
 describe('layout', () => {
     it('should have correct type name', () => {
-        expect(testType({type: 'Absolute'})).toEqual('Absolute');
-        expect(testType({type: 'Accordion'})).toEqual('Accordion');
-        expect(testType({type: 'Anchor'})).toEqual('Anchor');
-        expect(testType({type: 'Auto'})).toEqual('Auto');
-        expect(testType({type: 'Box'})).toEqual('Box');
-        expect(testType({type: 'Card'})).toEqual('Card');
-        expect(testType({type: 'CheckboxGroup'})).toEqual('CheckboxGroup');
-        expect(testType({type: 'Fit'})).toEqual('Fit');
-        expect(testType({type: 'Form'})).toEqual('Form');
-        expect(testType({type: 'HBox'})).toEqual('HBox');
-        expect(testType({columns: 0, type: 'Table'})).toEqual('Table');
-        expect(testType({type: 'VBox'})).toEqual('VBox');
+        expect(testType({ props: {}, type: 'Absolute' })).toEqual('Absolute');
+        expect(testType({ props: {}, type: 'Accordion' })).toEqual('Accordion');
+        expect(testType({ props: {}, type: 'Anchor' })).toEqual('Anchor');
+        expect(testType({ props: {}, type: 'Auto' })).toEqual('Auto');
+        expect(testType({ props: {}, type: 'Box' })).toEqual('Box');
+        expect(testType({ props: {}, type: 'Card' })).toEqual('Card');
+        expect(testType({ props: {}, type: 'CheckboxGroup' })).toEqual('CheckboxGroup');
+        expect(testType({ props: {}, type: 'Fit' })).toEqual('Fit');
+        expect(testType({ props: {}, type: 'Form' })).toEqual('Form');
+        expect(testType({ props: {}, type: 'HBox' })).toEqual('HBox');
+        expect(testType({ props: { columns: 0 }, type: 'Table' })).toEqual('Table');
+        expect(testType({ props: {}, type: 'VBox' })).toEqual('VBox');
     });
 });

@@ -1,15 +1,17 @@
-import { ContainerType } from './layout';
-import Visual from './Visual';
-import { Container } from './layout/enums';
+import { ContainerBase } from './container';
 
 // A mechanism for displaying data using custom layout templates and formatting.
-export default interface View {
-    // children
-    children: Visual[];
+export default interface View extends ContainerBase {
+    // Sse shell context in state.
+    // You may want to react to external events.
+    contextToState?: KeyPathMap;
 
-    // use shell context as initial state
-    contextToState: KeyPathMap;
+    // Use local storage in state.
+    // Even if you close the browser and open the application again, you will have a cached state.
+    localToState?: KeyPathMap;
 
-    // container for children
-    container: Container | ContainerType[keyof ContainerType];
+    // Use session storage in state.
+    // Sometimes you want the cache only in your current session.
+    // When closing the browser, you want the cache to become empty again.
+    sessionToState?: KeyPathMap;
 }

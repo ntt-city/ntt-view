@@ -1,11 +1,11 @@
 import Layout from './Container';
 
-export interface CheckboxGroup {
+export default interface CheckboxGroupLayout extends Omit<Layout, 'props' | 'type'> {
 
+    props: Layout['props'] & {
+    };
+
+    type: typeof CheckboxGroupTypeName;
 }
 
 export const CheckboxGroupTypeName = 'CheckboxGroup';
-
-export default interface CheckboxGroupLayout extends CheckboxGroup, Omit<Layout, 'type'> {
-    type: typeof CheckboxGroupTypeName;
-}

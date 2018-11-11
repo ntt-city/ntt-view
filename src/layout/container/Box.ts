@@ -1,11 +1,11 @@
 import Layout from './Container';
 
-export interface Box {
+export default interface Box extends Omit<Layout, 'props' | 'type'> {
 
+    props: Layout['props'] & {
+    };
+
+    type: typeof BoxTypeName;
 }
 
 export const BoxTypeName = 'Box';
-
-export default interface BoxLayout extends Box, Omit<Layout, 'type'> {
-    type: typeof BoxTypeName;
-}

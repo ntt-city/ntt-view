@@ -1,11 +1,11 @@
 import Layout from './Box';
 
-export interface Accordion {
-
-}
-
 export const AccordionTypeName = 'Accordion';
 
-export default interface AccordionLayout extends Accordion, Omit<Layout, 'type'> {
+export default interface Accordion extends Omit<Layout, 'props' | 'type'> {
+    props: {
+
+    };
+
     type: typeof AccordionTypeName;
 }

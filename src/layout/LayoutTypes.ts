@@ -14,9 +14,9 @@ import {
     HBoxTypeName,
     TableTypeName,
     VBoxTypeName
-} from './container/index';
+} from './container';
 
-export type Container =
+type LayoutTypes =
     typeof AbsoluteTypeName |
     typeof AccordionTypeName |
     typeof AnchorTypeName |
@@ -32,3 +32,5 @@ export type Container =
     typeof HBoxTypeName |
     typeof TableTypeName |
     typeof VBoxTypeName;
+
+export default LayoutTypes;
