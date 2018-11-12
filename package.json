@@ -1,9 +1,12 @@
 {
   "name": "ntt-view",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "View model typings and schemas.",
   "main": "dist/index.js",
-  "types": ["dist/index.d.ts", "dist/index.d.ts"],
+  "types": [
+    "dist/index.d.ts",
+    "dist/index.d.ts"
+  ],
   "files": [
     "dist",
     "typings"
