@@ -16,7 +16,7 @@ export default interface ContainerBase extends Omit<Visual, 'props'> {
         // Defaults to: false
         autoScroll?: boolean;
 
-        children: Children;
+        children?: Children;
 
         // The container items
         items: Array<string | Visual>;

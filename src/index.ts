@@ -7,8 +7,11 @@ export { default as Property } from './Property';
 export { default as View } from './View';
 export { default as Visual } from './Visual';
 export * from './button';
-export * from './chart';
+// export * from './chart'; commented out because it is very specific
+export * from './data';
+export * from './dd';
 export * from './dialog';
+export * from './direct';
 export * from './form';
 export * from './grid';
 export * from './list';

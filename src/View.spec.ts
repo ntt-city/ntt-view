@@ -3,9 +3,10 @@ import View from './View';
 describe('View', () => {
 
     const view: View = {
-        children: [
-
-        ]
+        props: {
+            children: {},
+            items: []
+        }
     };
 
     it('', () => {
