@@ -19,6 +19,7 @@ export * from './menu';
 export * from './picker';
 export * from './resizer';
 export * from './slider';
+export * from './state';
 export * from './tab';
 export * from './tip';
 export * from './toolbar';

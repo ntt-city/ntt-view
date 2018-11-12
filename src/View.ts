@@ -1,17 +1,13 @@
 import { ContainerBase } from './container';
+import { Stateful } from './state';
 
 // A mechanism for displaying data using custom layout templates and formatting.
-export default interface View extends ContainerBase {
-    // Sse shell context in state.
-    // You may want to react to external events.
-    contextToState?: KeyPathMap;
+export default interface View extends Stateful, Omit<ContainerBase, 'props' | 'type'> {
 
-    // Use local storage in state.
-    // Even if you close the browser and open the application again, you will have a cached state.
-    localToState?: KeyPathMap;
+    props: ContainerBase['props'] & {
+    };
 
-    // Use session storage in state.
-    // Sometimes you want the cache only in your current session.
-    // When closing the browser, you want the cache to become empty again.
-    sessionToState?: KeyPathMap;
+    type?: typeof ViewTypeName;
 }
+
+export const ViewTypeName = 'View';
