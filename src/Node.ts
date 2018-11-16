@@ -1,4 +1,3 @@
-export default interface Node {
-
+export interface Node {
     props: SimpleObject;
 }

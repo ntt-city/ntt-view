@@ -1,4 +1,4 @@
 //
-export default interface Property {
+export interface Property {
     type: string;
 }

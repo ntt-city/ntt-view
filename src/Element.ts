@@ -1,4 +1,4 @@
-import Node from './Node';
-import Property from './Property';
+import { Node } from './Node';
+import { Property } from './Property';
 
-export default interface Element extends Node, Property { }
+export  interface Element extends Node, Property { }

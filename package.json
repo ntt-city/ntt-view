@@ -4,7 +4,6 @@
   "description": "View model typings and schemas.",
   "main": "dist/index.js",
   "types": [
-    "dist/index.d.ts",
     "dist/index.d.ts"
   ],
   "files": [

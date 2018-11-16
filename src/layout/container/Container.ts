@@ -1,6 +1,6 @@
 import Children from '../../Children';
 import Layout from '../Layout';
-import Visual from '../../Visual';
+import { Visual } from '../../Visual';
 
 export default interface Container extends Omit<Layout,'props' | 'type'> {
 

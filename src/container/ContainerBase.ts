@@ -1,5 +1,5 @@
 import Children from '../Children';
-import Visual from '../Visual';
+import { Visual } from '../Visual';
 import { LayoutType, LayoutTypes } from '../layout';
 
 export default interface ContainerBase extends Omit<Visual, 'props'> {

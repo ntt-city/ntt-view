@@ -1,11 +1,9 @@
 /// <reference path="../typings/index.d.ts" />
-export { default as BoundList } from './BoundList';
 export { default as Component } from './Component';
-export { default as Element } from './Element';
-export { default as Node } from './Node';
-export { default as Property } from './Property';
-export { default as View } from './View';
-export { default as Visual } from './Visual';
+export { Element } from './Element';
+export { Node } from './Node';
+export { Property } from './Property';
+export { Visual } from './Visual';
 export * from './button';
 // export * from './chart'; commented out because it is very specific
 export * from './data';
@@ -24,4 +22,5 @@ export * from './tab';
 export * from './tip';
 export * from './toolbar';
 export * from './tree';
+export * from './view';
 export * from './zoom';

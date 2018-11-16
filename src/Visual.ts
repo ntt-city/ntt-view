@@ -1,3 +1,3 @@
-import Element from './Element';
+import { Element } from './Element';
 
-export default interface Visual extends Element { }
+export interface Visual extends Element { }
